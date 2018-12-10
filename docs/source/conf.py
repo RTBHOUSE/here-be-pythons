@@ -20,8 +20,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Here-Be-Pythons!'
-copyright = '2018, Maciej Wrześniewski'
-author = 'Maciej Wrześniewski'
+copyright = u'2018, Maciej Wrześniewski'
+author = u'Maciej Wrześniewski'
 
 # The short X.Y version
 version = ''
