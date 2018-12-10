@@ -1,0 +1,14 @@
+p {
+    margin-bottom: 18px;
+}
+
+li:not(.toctree-l1),
+.rst-content blockquote,
+.rst-content ol.arabic {
+    margin-bottom: 12px;
+}
+
+.wy-side-nav-search {
+    border-bottom:    5px solid #869198;
+    background-color: inherit;
+}
