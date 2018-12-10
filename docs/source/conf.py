@@ -147,7 +147,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'Here-Be-Pythons.tex', 'Here-Be-Pythons! Documentation',
-     'Maciej Wrześniewski', 'manual'),
+     u'Maciej Wrześniewski', 'manual'),
 ]
 
 
