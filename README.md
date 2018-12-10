@@ -18,4 +18,4 @@ Still, we are more than happy to hear your feedback. All for the glory of this r
 
 ## The Content
 
-You may find the proper content for Here-Be-Pythons! graciously hosted on [Read the Docs](https://here-be-pythons.readthedocs.io/en/latest/).
+You may find the proper content for Here-Be-Pythons! graciously hosted on [Read the Docs](https://here-be-pythons.readthedocs.io).
