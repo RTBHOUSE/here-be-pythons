@@ -82,7 +82,7 @@ html_theme = 'sphinx_rtd_theme'
 # documentation.
 #
 html_logo = 'img/python-logo.png'
-html_show_sourcelink = True
+html_show_sourcelink = False
 
 
 # VCS options: https://docs.readthedocs.io/en/latest/vcs.html#github
