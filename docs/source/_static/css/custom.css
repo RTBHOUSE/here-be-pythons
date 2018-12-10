@@ -12,3 +12,7 @@ li:not(.toctree-l1),
     border-bottom:    5px solid #869198;
     background-color: inherit;
 }
+
+.fa.fa-github {
+    display: none;
+}

@@ -82,6 +82,7 @@ html_theme = 'sphinx_rtd_theme'
 # documentation.
 #
 html_logo = 'img/python-logo.png'
+# GitHub sourcelink is already available on Read the Docs bottom-left toolbar.
 html_show_sourcelink = False
 
 
