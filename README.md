@@ -1,6 +1,6 @@
 # Here-Be-Pythons!
 
-[![Documentation Status](https://readthedocs.org/projects/here-be-pythons/badge/?version=latest)](https://here-be-pythons.readthedocs.io/en/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/here-be-pythons/badge/?version=latest)](https://here-be-pythons.readthedocs.io/?badge=latest)
 
 Here-Be-Pythons!™ holds opinionated best practices & ideas to help you build your next Python project.
 
