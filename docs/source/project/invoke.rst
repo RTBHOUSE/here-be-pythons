@@ -19,7 +19,7 @@ Invoke - Manage & Execute Tasks
 + Docstrings of functions implementing Invoke tasks are automatically formatted into a command line help:
 
 
-.. code-block:: txt
+.. code-block::
 
     >>> invoke --list
     Available tasks:
