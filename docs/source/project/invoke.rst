@@ -19,15 +19,15 @@ Invoke - Manage & Execute Tasks
 + Docstrings of functions implementing Invoke tasks are automatically formatted into a command line help:
 
 
-.. code-block::
+.. code-block::  console
 
-    >>> invoke --list
+    > invoke --list
     Available tasks:
 
       task1   First line of task1 docstring.
       task2   First line of task2 docstring.
 
-    >>> invoke --help task2
+    > invoke --help task2
     Usage: inv[oke] [--core-opts] task2 [--options] [other tasks here ...]
 
     Docstring:
