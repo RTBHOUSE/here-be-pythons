@@ -3,7 +3,7 @@ Here-Be-Pythons!
 
 Here-Be-Pythons!™ holds opinionated best practices & ideas to help you build your next Python project.
 
-The goal is to gather the sweetest & most impactful nuggets of wisdom relating to Python ventures and make them accessible from a single place. Because a little investment in automation and knowledge makes your snake-projects fly, following the famous equation: 🐍 + 💚 = 🚀
+The goal is to gather the sweetest & most impactful nuggets of wisdom relating to Python ventures and make them accessible from a single place. Because a little investment in automation and knowledge makes your snake-projects fly, following the famous equation: 🐍+ 💚= 🚀
 
 Hopefully, Here-Be-Pythons! will inspire you to code your awesome projects faster and to make them even better.
 
