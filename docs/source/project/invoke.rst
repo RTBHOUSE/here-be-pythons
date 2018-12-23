@@ -42,7 +42,59 @@ Invoke - Manage & Execute Tasks
    To learn how to add help for additional parameters for Invoke tasks, see `the docs <http://docs.pyinvoke.org/en/0.11.0/getting_started.html#adding-help-for-parameters>`_.
 
 
-+ `Invoke tasks can be organised using namespaces <http://docs.pyinvoke.org/en/1.2/concepts/namespaces.html>`_. Then, for instance, you can call server tasks like ``server.deploy``/``server.logs`` or organise job-related tasks like ``job.start``/``job.stop``.
++ `Invoke tasks can be organised using namespaces <http://docs.pyinvoke.org/en/1.2/concepts/namespaces.html>`_. For instance:
+
+    .. code-block::  python
+
+        # File: $PROJECT_ROOT/tasks.py
+        import invoke
+
+        import src.app.tasks
+        import src.db.tasks
+
+
+        @invoke.task
+        def core_task_1():
+            pass
+
+
+        @invoke.task
+        def core_task_2():
+            pass
+
+
+        ##################################
+        # Organise tasks into namespaces #
+        ##################################
+
+        # Because we are customizing tasks, now we HAVE TO manually create
+        # main namespace in a variable named `namespace` or `ns`.
+        # See: http://docs.pyinvoke.org/en/1.2/concepts/namespaces.html#starting-out
+        namespace = invoke.Collection()
+
+        # Add to the main namespace top-level tasks from the current file.
+        namespace.add_task(core_task_1)
+        namespace.add_task(core_task_2)
+
+        # Create `app` namespace and add related tasks.
+        app_namespace = invoke.Collection('app')
+        app_namespace.add_task(src.app.tasks.start)
+        app_namespace.add_task(src.app.tasks.stop)
+
+        # Create `db` namespace and add related tasks.
+        db_namespace = invoke.Collection('db')
+        # By default task name will be derived from the implementing function
+        # name, but we can also customize it via `aliases` argument.
+        db_namespace.add_task(src.db.tasks.fire_up_postgres, aliases='fire_up')
+        db_namespace.add_task(src.db.tasks.stop_postgres, aliases='stop')
+        # We can nest `db` namespace into `app` namespace!
+        app_namespace.add_collection(db_namespace)
+
+        # Finally, we have to add `app` namespace (together with the nested
+        # `db` tasks) to the main namespace.
+        namespace.add_collection(app_namespace)
+
+    Now we can call our tasks like ``app.start`` or ``app.db.fire-up``. Sweet!
 
 + Invoke can be easily buffed with `shell tab completion <http://docs.pyinvoke.org/en/1.2/invoke.html#shell-tab-completion>`_.
 
