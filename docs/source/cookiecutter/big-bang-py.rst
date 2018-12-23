@@ -11,21 +11,22 @@ Moreover, it is maintained by the very same authors 😊, so both projects are p
 Usage
 -----
 
-.. code-block:: bash
+.. code-block:: console
 
-   # Generate a new project.
-   cookiecutter gh:RTBHOUSE/big-bang-py
+    # Generate a new project.
+    > cookiecutter gh:RTBHOUSE/big-bang-py
 
-   # Answer all of the prompted questions.
-   # Brackets show default options. Click <enter> if you wish to accept them.
-   project_name [My New Project]: ???
-   project_dir  [my-new-project]: ???
-   project_source_code_dir [src]: ???
+    # Answer all of the prompted questions.
+    # Brackets show default options. Click <enter> if you wish to accept them.
+    project_name [My New Project]: ???
+    project_dir  [my-new-project]: ???
+    project_source_code_dir [src]: ???
 
-   # Go to your new project folder.
-   cd $MY_NEW_PROJECT_DIR
+    # Finish with:
+    > cd $MY_NEW_PROJECT_DIR
+    > ./finish_project_setup
+    > ./invoke_bash_completion \
+          && rm -f invoke_bash_completion \
+          && source $VIRTUAL_ENV/bin/activate
 
-   # Run the script below:
-   ./finish_project_setup
-
-Voilà! You are ready to code!
+And voilà! You are ready to code!
