@@ -16,3 +16,7 @@ li:not(.toctree-l1),
 .fa.fa-github {
     display: none;
 }
+
+p.caption {
+    text-align: center;
+}
