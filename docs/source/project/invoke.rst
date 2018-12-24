@@ -10,36 +10,41 @@ Invoke - Manage & Execute Tasks
 
    Manage and execute those project tasks via `Invoke <http://www.pyinvoke.org>`_.
 
-+ You can replace ``Makefiles`` and similar straightaway, as Invoke is dead simple.
++ You can replace ``Makefiles`` and similar task managers straightaway as Invoke is intuitive and user-friendly.
 
 + Invoke tasks are called by typing in the shell ``invoke *task-name*``.
 
+    + Invoke can be easily buffed with `shell tab completion <http://docs.pyinvoke.org/en/1.2/invoke.html#shell-tab-completion>`_.
+
+      If you work on your projects using ``bash`` with virtualenv loaded via ``pipenv shell``, a ready-2-go installation script can be found in `Big-Bang-py <https://github.com/RTBHOUSE/big-bang-py/blob/master/%7B%7Bcookiecutter.project_dir%7D%7D/invoke_bash_completion>`_. If your development environment differs, this script can still give you a basis, or at least a hint, how to build a solution of your own.
+
 + Invoke tasks are normal Python functions organised in ``tasks.py`` file.
+
+    + You may find examples of Invoke tasks in `Big-Bang-py <https://github.com/RTBHOUSE/big-bang-py/blob/master/%7B%7Bcookiecutter.project_dir%7D%7D/tasks.py>`_.
 
 + Docstrings of functions implementing Invoke tasks are automatically formatted into a command line help:
 
+    .. code-block::  console
 
-.. code-block::  console
+        > invoke --list
+        Available tasks:
 
-    > invoke --list
-    Available tasks:
+          task1   First line of task1 docstring.
+          task2   First line of task2 docstring.
 
-      task1   First line of task1 docstring.
-      task2   First line of task2 docstring.
+        > invoke --help task2
+        Usage: inv[oke] [--core-opts] task2 [--options] [other tasks here ...]
 
-    > invoke --help task2
-    Usage: inv[oke] [--core-opts] task2 [--options] [other tasks here ...]
+        Docstring:
+          Full docstring of task 2.
 
-    Docstring:
-      Full docstring of task 2.
-
-    Options:
-      -p TYPE, --param=TYPE   Your additional parameters help string.
+        Options:
+          -p TYPE, --param=TYPE   Your additional parameters help string.
 
 
-.. note::
+    .. note::
 
-   To learn how to add help for additional parameters for Invoke tasks, see `the docs <http://docs.pyinvoke.org/en/0.11.0/getting_started.html#adding-help-for-parameters>`_.
+       To learn how to add help for additional parameters for Invoke tasks, see `the docs <http://docs.pyinvoke.org/en/0.11.0/getting_started.html#adding-help-for-parameters>`_.
 
 
 + `Invoke tasks can be organised using namespaces <http://docs.pyinvoke.org/en/1.2/concepts/namespaces.html>`_. For instance:
@@ -47,6 +52,7 @@ Invoke - Manage & Execute Tasks
     .. code-block::  python
 
         # File: $PROJECT_ROOT/tasks.py
+
         import invoke
 
         import src.app.tasks
@@ -54,12 +60,12 @@ Invoke - Manage & Execute Tasks
 
 
         @invoke.task
-        def core_task_1():
+        def core_task_1(c):
             pass
 
 
         @invoke.task
-        def core_task_2():
+        def core_task_2(c):
             pass
 
 
@@ -68,7 +74,7 @@ Invoke - Manage & Execute Tasks
         ##################################
 
         # Because we are customizing tasks, now we HAVE TO manually create
-        # main namespace in a variable named `namespace` or `ns`.
+        # main namespace and point to it via variable named `namespace` or `ns`.
         # See: http://docs.pyinvoke.org/en/1.2/concepts/namespaces.html#starting-out
         namespace = invoke.Collection()
 
@@ -96,10 +102,14 @@ Invoke - Manage & Execute Tasks
 
     Now we can call our tasks like ``app.start`` or ``app.db.fire-up``. Sweet!
 
-+ Invoke can be easily buffed with `shell tab completion <http://docs.pyinvoke.org/en/1.2/invoke.html#shell-tab-completion>`_.
++ If Invoke task behaves weirdly regarding prints/logs/stdout/stderr/etc. it is worth trying to add ``pty=True`` argument in ``c.run`` call:
 
-    + If you work on your projects using ``bash`` with virtualenv loaded via ``pipenv shell``, a ready-2-go installation script can be found in the file ``invoke_bash_completion`` in `Big-Bang-py <https://github.com/RTBHOUSE/big-bang-py/blob/master/%7B%7Bcookiecutter.project_dir%7D%7D/invoke_bash_completion>`_. If your development environment differs, this script can still give you a basis, or at least a hint, how to build a solution of your own.
+    .. code-block::  python
 
-+ You may find examples of Invoke tasks in the ``tasks.py`` in `Big-Bang-py <https://github.com/RTBHOUSE/big-bang-py/blob/master/%7B%7Bcookiecutter.project_dir%7D%7D/tasks.py>`_.
+        @invoke.task
+        def flake8(c):
+            c.run('python -m flake8', pty=True)
+
+    By default, ``run`` connects directly to the invoked process and reads its stdout/stderr streams. Some programs will behave differently in this situation compared to using an actual terminal or pseudoterminal (pty). Due to their nature, ptys have a single output stream, so the ability to tell stdout apart from stderr is not possible. As such, all output will appear on ``out_stream`` and be captured into the ``stdout`` result attribute. ``err_stream`` and ``stderr`` will always be empty when ``pty=True``.
 
 + `The official documentation <http://docs.pyinvoke.org/en/1.2/>`_ is solid. Get familiar with it.
