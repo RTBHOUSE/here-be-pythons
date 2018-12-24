@@ -17,6 +17,6 @@ li:not(.toctree-l1),
     display: none;
 }
 
-p.caption {
+div.figure > p.caption {
     text-align: center;
 }
