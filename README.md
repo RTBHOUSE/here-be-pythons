@@ -30,6 +30,6 @@ You may find [Here-Be-Pythons!](https://here-be-pythons.readthedocs.io) content 
     
     + `docs.develop` - build Sphinx HTML docs and open them in the browser with hot reloading.
     
-+ Once you are good-to-go, propose your changes via a [Pull Request](https://github.com/RTBHOUSE/big-bang-py/compare).
++ Once you are good-to-go, propose your changes via a [Pull Request](https://github.com/RTBHOUSE/here-be-pythons/compare).
 
     + Before you make a PR, remember to build the docs and manually review if Here-Be-Pythons! still renders correctly!
