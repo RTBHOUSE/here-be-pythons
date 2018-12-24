@@ -3,14 +3,16 @@ import invoke
 
 @invoke.task
 def build_docs(c):
-    """Build Sphinx HTML docs. """
+    """
+    Build Sphinx HTML docs and save them in `$PROJECT_ROOT/docs/build/html/`.
+    """
     c.run('sphinx-build -E -a -b html docs/source/ docs/build/html/')
 
 
 @invoke.task
 def develop_docs(c):
     """
-    Open Sphinx HTML docs in the browser with hot reloading.
+    Build Sphinx HTML docs and open them in the browser with hot reloading.
 
     The browser opens after 2 seconds.
     """

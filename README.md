@@ -18,4 +18,18 @@ Still, we are more than happy to hear your feedback. All for the glory of this r
 
 ## The Content
 
-You may find the proper content for Here-Be-Pythons! graciously hosted on [Read the Docs](https://here-be-pythons.readthedocs.io).
+You may find [Here-Be-Pythons!](https://here-be-pythons.readthedocs.io) content graciously hosted on [Read the Docs](https://readthedocs.org/).
+
+## Contribution Guide
+
++ After cloning the repo, install dev dependencies by calling `pipenv install --dev`.
+
++ There are two Invoke tasks that are helpful during development:
+
+    + `docs.build` - build Sphinx HTML docs and save them in `$PROJECT_ROOT/docs/build/html/`.
+    
+    + `docs.develop` - build Sphinx HTML docs and open them in the browser with hot reloading.
+    
++ Once you are good-to-go, propose your changes via a [Pull Request](https://github.com/RTBHOUSE/big-bang-py/compare).
+
+    + Before you make a PR, remember to build the docs and manually review if Here-Be-Pythons! still renders correctly!
