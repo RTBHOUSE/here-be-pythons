@@ -7,9 +7,13 @@ name = "pypi"
 
 [dev-packages]
 invoke = "*"
+PyYAML = "==4.2b4"
 sphinx = "*"
 sphinx-autobuild = "*"
 sphinx-rtd-theme = "*"
 
 [requires]
 python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
