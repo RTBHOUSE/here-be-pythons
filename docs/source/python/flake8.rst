@@ -27,7 +27,7 @@ Flake8 - Octo-Ninja Linter
 
     + An interesting example is `flake8-html <https://github.com/lordmauve/flake8-html>`_, which generates readable Flake8 HTML report (works similar to `coverage html`).
 
-+ It is recommended to include Flake8 in your linting Invoke task and also to run it during pre-commit Git hook. Example of both can be found in Big-Bang-py, see `tasks.py <https://github.com/RTBHOUSE/big-bang-py/blob/master/%7B%7Bcookiecutter.project_dir%7D%7D/tasks.py#L54-L58>`_ and `pre-commit <https://github.com/RTBHOUSE/big-bang-py/blob/master/%7B%7Bcookiecutter.project_dir%7D%7D/hooks/pre-commit#L61-L77>`_.
++ It is recommended to include Flake8 in your linting Invoke task and also to run it during pre-commit Git hook. Example of both can be found in Big-Bang-py, see `tasks.py <https://github.com/RTBHOUSE/big-bang-py/blob/master/%7B%7Bcookiecutter.project_dir%7D%7D/tasks.py#L54-L58>`_ and `pre-commit <https://github.com/RTBHOUSE/big-bang-py/blob/master/%7B%7Bcookiecutter.project_dir%7D%7D/githooks/pre-commit#L61-L77>`_.
 
 + To manage edge cases, exclude Flake8 checking:
 
