@@ -6,11 +6,26 @@ name = "pypi"
 [packages]
 
 [dev-packages]
+flake8 = "*"
+flake8-bugbear = "*"
+flake8-commas = "*"
+flake8-comprehensions = "*"
+flake8-docstrings = "*"
+flake8-html = "*"
+flake8-per-file-ignores = "*"
+flake8-print = "*"
 invoke = "*"
+isort = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-mock = "*"
+pytest-socket = "*"
+pytest-sugar = "*"
 PyYAML = "==4.2b4"
 sphinx = "*"
 sphinx-autobuild = "*"
 sphinx-rtd-theme = "*"
+yapf = "*"
 
 [requires]
 python_version = "3.7"
