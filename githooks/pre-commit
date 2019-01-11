@@ -49,9 +49,18 @@ if __name__ == '__main__':
     )
     if flake8_return_code == 0:
         print('Flake8 Exit Status: 0 => OK!')
-        print('')
     else:
         print('')
         print(f'Flake8 Exit Status: {flake8_return_code} => aborting commit!')
         print('')
         sys.exit(flake8_return_code)
+
+    print(cowsay('Check for broken links'), end='\n\n')
+    find_broken_links_return_code = subprocess.run(['python', 'find_broken_links.py']).returncode
+    if find_broken_links_return_code == 0:
+        print('All links are OK!')
+        print('')
+    else:
+        print(f'Some links are broken! See the report above.')
+        print('')
+        sys.exit(find_broken_links_return_code)
