@@ -69,7 +69,7 @@ class TestFindBrokenLinks:
             file:      tests/files/foo.rst:3
             
             url:       http://www.pirate-url6.com
-            returns:   666
+            returns:   -1
             file:      tests/files/foo.rst:5
             
             Timeout on: https://pirateipsum.me

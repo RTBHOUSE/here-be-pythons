@@ -83,7 +83,7 @@ def _update_link_health(link: Link, counters: Counters) -> None:
         try:
             link.status_code = exc.code
         except AttributeError:
-            link.status_code = 666
+            link.status_code = -1
 
     except socket.timeout:
         print(f'Timeout on: {link.url}', end='\n\n')
