@@ -38,17 +38,17 @@ YAPF - Source Code Formatter
         # yapf: disable
 
         all_domains_dict_1 = {
-            'http://valid-safe-foo-1.bar': {'impression': 1},
-            'http://valid-safe-foo-2.bar': {'impression': 2},
+            'valid-safe-foo-1.bar': {'impression': 1},
+            'valid-safe-foo-2.bar': {'impression': 2},
         }
 
         all_domains_dict_2 = {
-            'http://valid-safe-spam-3.eggs': {'impression': 3},
-            'http://valid-safe-spam-4.eggs': {'impression': 4},
+            'valid-safe-spam-3.eggs': {'impression': 3},
+            'valid-safe-spam-4.eggs': {'impression': 4},
         }
         unsafe_domains_dict_2 = {
-            'http://valid-unsafe-spam-1.eggs': {'impression': 5},
-            'http://valid-unsafe-spam-2.eggs': {'impression': 6},
+            'valid-unsafe-spam-1.eggs': {'impression': 5},
+            'valid-unsafe-spam-2.eggs': {'impression': 6},
         }
 
         # yapf: enable
