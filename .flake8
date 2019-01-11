@@ -41,7 +41,8 @@ ignore =
     W503
 
 per-file-ignores =
-  find_broken_links.py: T001
+  find_broken_links.py: T001,
+  tests/test_find_broken_links.py: W293
 
 # McCabe Cyclomatic Complexity
 max_complexity = 7
