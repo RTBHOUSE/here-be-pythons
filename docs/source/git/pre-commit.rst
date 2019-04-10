@@ -6,7 +6,7 @@ Pre-commit Git Hook
 .. admonition:: Main point
    :class: tip
 
-   The pre-commit `Git hook <https://githooks.com>`_ is run before you even start typing new commit message. It is a perfect opportunity to run tests and linters.
+   The pre-commit `Git hook <https://githooks.com>`_ is run - surprise, surprise - before you commit! 😀 It is a perfect opportunity to run tests and linters.
 
 
 + Regardless of your discipline as a software programmer or simply how good is your memory, pre-commit Git hook will check your code automatically. In effect:
