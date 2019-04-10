@@ -51,6 +51,7 @@ Table of Contents
 
    git/gitignore
    git/pre-commit
+   git/semantic-commit-messages
 
 
 .. toctree::
