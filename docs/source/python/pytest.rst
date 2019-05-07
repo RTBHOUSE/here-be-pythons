@@ -45,8 +45,6 @@ Pytest - Test Framework
 
 + Useful content:
 
-    + `Why pytest? <http://thesoftjaguar.com/pres_pytest.html#/>`_
-
     + `Official documentation <https://docs.pytest.org/en/latest/contents.html>`_
 
     + `Python Testing with pytest: Simple, Rapid, Effective, and Scalable <https://www.amazon.com/Python-Testing-pytest-Effective-Scalable/dp/1680502409>`_
