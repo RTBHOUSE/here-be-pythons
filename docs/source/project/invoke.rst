@@ -18,7 +18,7 @@ Invoke - Manage & Execute Tasks
 
       If you work on your projects using ``bash`` with virtualenv, a ready-2-go installation script can be found in `Big-Bang-py <https://github.com/RTBHOUSE/big-bang-py/blob/master/%7B%7Bcookiecutter.project_dir%7D%7D/invoke_bash_completion>`_. If your development environment differs, this script can still give you a basis, or at least a hint, how to build a solution of your own.
 
-+ Invoke tasks are normal Python functions organised in ``tasks.py`` file.
++ Invoke tasks are normal Python functions organised in ``tasks.py`` file or `tasks Python package <https://github.com/RTBHOUSE/big-bang-py/tree/master/%7B%7Bcookiecutter.project_dir%7D%7D/tasks>`_.
 
     + You may find examples of Invoke tasks in `Big-Bang-py <https://github.com/RTBHOUSE/big-bang-py/blob/master/%7B%7Bcookiecutter.project_dir%7D%7D/tasks.py>`_.
 
