@@ -16,7 +16,7 @@ Invoke - Manage & Execute Tasks
 
     + Invoke can be easily buffed with `shell tab completion <http://docs.pyinvoke.org/en/1.2/invoke.html#shell-tab-completion>`_.
 
-      If you work on your projects using ``bash`` with virtualenv loaded via ``pipenv shell``, a ready-2-go installation script can be found in `Big-Bang-py <https://github.com/RTBHOUSE/big-bang-py/blob/master/%7B%7Bcookiecutter.project_dir%7D%7D/invoke_bash_completion>`_. If your development environment differs, this script can still give you a basis, or at least a hint, how to build a solution of your own.
+      If you work on your projects using ``bash`` with virtualenv, a ready-2-go installation script can be found in `Big-Bang-py <https://github.com/RTBHOUSE/big-bang-py/blob/master/%7B%7Bcookiecutter.project_dir%7D%7D/invoke_bash_completion>`_. If your development environment differs, this script can still give you a basis, or at least a hint, how to build a solution of your own.
 
 + Invoke tasks are normal Python functions organised in ``tasks.py`` file.
 

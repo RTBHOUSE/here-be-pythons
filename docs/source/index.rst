@@ -37,7 +37,7 @@ Table of Contents
    :caption: Python
 
    python/interpreter-version
-   python/pipenv
+   python/dependencies
    python/isort
    python/yapf
    python/flake8

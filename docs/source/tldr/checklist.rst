@@ -8,7 +8,7 @@ TL;DR Checklist
 
     + Use `Python 3.7 <https://docs.python.org/3/whatsnew/3.7.html>`_.
 
-    + Manage app dependencies using `Pipenv <https://pipenv.readthedocs.io/en/latest>`_.
+    + Manage app dependencies using a combo of `virtualenv <https://virtualenv.pypa.io/en/latest/>`_ and `pip-tools <https://github.com/jazzband/pip-tools>`_.
 
     + Sort imports with `isort <https://github.com/timothycrosley/isort>`_.
 
