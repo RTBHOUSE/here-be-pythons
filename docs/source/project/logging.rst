@@ -21,18 +21,18 @@ Logging Is a Programmer's Best Friend
 
     + How to get started?
 
-    .. code-block:: python
+      .. code-block:: python
 
-        # Load logging config
-        import logging.config
-        from src.logging_config import DICT_CONFIG
-        logging.config.dictConfig(DICT_CONFIG)
+         # Load logging config
+         import logging.config
+         from src.logging_config import DICT_CONFIG
+         logging.config.dictConfig(DICT_CONFIG)
 
-        # Get logger
-        logger = logging.getLogger('main')
+         # Get logger
+         logger = logging.getLogger('main')
 
-        # Logging time!
-        logger.info('* THE GREAT BIRD IS LISTENING *')
+         # Logging time!
+         logger.info('* THE GREAT BIRD IS LISTENING *')
 
 
 .. admonition:: Power-Hint!
