@@ -23,11 +23,11 @@ Flake8 - Octo-Ninja Linter
 
 + There is an abundance of `plugins <http://flake8.pycqa.org/en/latest/user/using-plugins.html>`_ greatly extending capability of Flake8. Search for them on `GitHub <https://github.com/search?q=flake8>`_.
 
-    + A bunch of plugins are included in Flake8 configuration of Big-Bang-py. See all `flake8-*` packages in `Pipfile <https://github.com/RTBHOUSE/big-bang-py/blob/master/%7B%7Bcookiecutter.project_dir%7D%7D/Pipfile#L12-L17>`_.
+    + A bunch of plugins are included in Flake8 configuration of Big-Bang-py. See all `flake8-*` packages in `dev.in <https://github.com/RTBHOUSE/big-bang-py/blob/master/%7B%7Bcookiecutter.project_dir%7D%7D/requirements/abstract/dev.in#L6-L14>`_ file.
 
     + An interesting example is `flake8-html <https://github.com/lordmauve/flake8-html>`_, which generates readable Flake8 HTML report (works similar to `coverage html`).
 
-+ It is recommended to include Flake8 in your linting Invoke task and also to run it during Pre-commit Git Hook. Example of both can be found in Big-Bang-py, see `tasks.py <https://github.com/RTBHOUSE/big-bang-py/blob/master/%7B%7Bcookiecutter.project_dir%7D%7D/tasks.py#L54-L58>`_ and `Pre-commit <https://github.com/RTBHOUSE/big-bang-py/blob/master/%7B%7Bcookiecutter.project_dir%7D%7D/githooks/pre-commit#L61-L77>`_.
++ It is recommended to include Flake8 in your linting Invoke task and also to run it during Pre-commit Git Hook. Example of both can be found in Big-Bang-py, see `project.py <https://github.com/RTBHOUSE/big-bang-py/blob/master/%7B%7Bcookiecutter.project_dir%7D%7D/tasks/project.py#L40-L41>`_ and `Pre-commit <https://github.com/RTBHOUSE/big-bang-py/blob/master/%7B%7Bcookiecutter.project_dir%7D%7D/githooks/pre-commit#L61-L77>`_.
 
 + To manage edge cases, exclude Flake8 checking:
 

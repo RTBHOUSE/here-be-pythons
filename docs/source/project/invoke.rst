@@ -20,7 +20,7 @@ Invoke - Manage & Execute Tasks
 
 + Invoke tasks are normal Python functions organised in ``tasks.py`` file or `tasks Python package <https://github.com/RTBHOUSE/big-bang-py/tree/master/%7B%7Bcookiecutter.project_dir%7D%7D/tasks>`_.
 
-    + You may find examples of Invoke tasks in `Big-Bang-py <https://github.com/RTBHOUSE/big-bang-py/blob/master/%7B%7Bcookiecutter.project_dir%7D%7D/tasks.py>`_.
+    + You may find examples of Invoke tasks in `Big-Bang-py <https://github.com/RTBHOUSE/big-bang-py/blob/master/%7B%7Bcookiecutter.project_dir%7D%7D/tasks>`_.
 
 + Docstrings of functions implementing Invoke tasks are automatically formatted into a command line help:
 
