@@ -22,7 +22,7 @@ TL;DR Checklist
 
     + Use `.gitignore <https://git-scm.com/docs/gitignore>`_.
 
-    + Use `pre-commit Git hook <https://githooks.com>`_.
+    + Use `Pre-commit Git Hook <https://githooks.com>`_.
 
 + Project:
 

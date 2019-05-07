@@ -15,6 +15,6 @@ McCabe - Code Complexity Checker
 
 + Code with high cyclomatic complexity (usually assumed as 10+) is likely to be difficult to understand and therefore have a higher probability of containing defects.
 
-+ It is recommended to include McCabe in your linting Invoke task and also to run it during pre-commit Git hook. In Big-Bang-py McCabe is run automatically by Flake8 linter.
++ It is recommended to include McCabe in your linting Invoke task and also to run it during Pre-commit Git Hook. In Big-Bang-py McCabe is run automatically by Flake8 linter.
 
-    + Cut-off complexity in Invoke task and pre-commit Git hook is arbitrarily assumed to be 7 (configured by `max-complexity <http://flake8.pycqa.org/en/latest/user/options.html#cmdoption-flake8-max-complexity>`_ set in `.flake8 <https://github.com/RTBHOUSE/big-bang-py/blob/master/%7B%7Bcookiecutter.project_dir%7D%7D/.flake8#L43-L44>`_). However, this number should be adjusted to reflect your experience and project needs.
+    + Cut-off complexity in Invoke task and Pre-commit Git Hook is arbitrarily assumed to be 7 (configured by `max-complexity <http://flake8.pycqa.org/en/latest/user/options.html#cmdoption-flake8-max-complexity>`_ set in `.flake8 <https://github.com/RTBHOUSE/big-bang-py/blob/master/%7B%7Bcookiecutter.project_dir%7D%7D/.flake8#L43-L44>`_). However, this number should be adjusted to reflect your experience and project needs.

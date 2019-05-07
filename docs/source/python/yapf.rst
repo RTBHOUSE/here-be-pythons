@@ -15,7 +15,7 @@ YAPF - Source Code Formatter
 
     + You may find pre-configured ``.style.yapf`` in `Big-Bang-py <https://github.com/RTBHOUSE/big-bang-py/blob/master/%7B%7Bcookiecutter.project_dir%7D%7D/.style.yapf>`_.
 
-+ It is recommended to include YAPF in your linting Invoke task and also to run it during pre-commit Git hook. Example of both can be found in Big-Bang-py, see `tasks.py <https://github.com/RTBHOUSE/big-bang-py/blob/master/%7B%7Bcookiecutter.project_dir%7D%7D/tasks.py#L48-L52)>`_ and `pre-commit <https://github.com/RTBHOUSE/big-bang-py/blob/master/%7B%7Bcookiecutter.project_dir%7D%7D/githooks/pre-commit#L47-L59>`_.
++ It is recommended to include YAPF in your linting Invoke task and also to run it during Pre-commit Git Hook. Example of both can be found in Big-Bang-py, see `tasks.py <https://github.com/RTBHOUSE/big-bang-py/blob/master/%7B%7Bcookiecutter.project_dir%7D%7D/tasks.py#L48-L52)>`_ and `pre-commit <https://github.com/RTBHOUSE/big-bang-py/blob/master/%7B%7Bcookiecutter.project_dir%7D%7D/githooks/pre-commit#L47-L59>`_.
 
 + To manage edge cases, `disable YAPF <https://github.com/google/yapf#why-does-yapf-destroy-my-awesome-formatting>`_:
 
