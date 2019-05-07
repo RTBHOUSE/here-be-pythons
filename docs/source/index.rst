@@ -42,6 +42,7 @@ Table of Contents
    python/yapf
    python/flake8
    python/mccabe
+   python/bandit
    python/pytest
 
 

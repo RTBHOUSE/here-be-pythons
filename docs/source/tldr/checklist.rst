@@ -16,6 +16,8 @@ TL;DR Checklist
 
     + Lint code with `Flake8 <https://github.com/PyCQA/flake8>`_.
 
+    + Check security issues with `Bandit <https://github.com/PyCQA/bandit>`_.
+
     + Use `pytest <https://docs.pytest.org/en/latest/>`_ as test framework.
 
 + Git:
