@@ -90,9 +90,9 @@ Invoke - Manage & Execute Tasks
         # Create `db` namespace and add related tasks.
         db_namespace = invoke.Collection('db')
         # By default task name will be derived from the implementing function
-        # name, but we can also customize it via `aliases` argument.
-        db_namespace.add_task(src.db.tasks.fire_up_postgres, aliases='fire_up')
-        db_namespace.add_task(src.db.tasks.stop_postgres, aliases='stop')
+        # name, but we can also customize it via `name` argument.
+        db_namespace.add_task(src.db.tasks.fire_up_postgres, name='fire_up')
+        db_namespace.add_task(src.db.tasks.stop_postgres, name='stop')
         # We can nest `db` namespace into `app` namespace!
         app_namespace.add_collection(db_namespace)
 
