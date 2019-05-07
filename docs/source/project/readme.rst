@@ -15,7 +15,9 @@ README - Gateway to Your Code
 
     Is it your favorite book? ;)
 
-+ **By bringing the most essential knowledge about the project in a structured manner, README serves as a lantern for all of the programmers from the future - including the future YOU!**
++ Documentation forces you to prove that you understand how your program works and that you can explain it to the world. Moreover, such journey usually results in finding most surprising bugs. Documentation becomes your rubber duck!
+
++ By bringing the most essential knowledge about the project in a structured manner, README serves as a lantern for all of the programmers from the future - including the future YOU!
 
     + To expand a bit, we should be honest and accept that over time code becomes more and more alien. `Legacy code is anything we’re not writing right now <https://itnext.io/it-doesnt-have-to-be-perfect-25071b56959b>`_.
 
